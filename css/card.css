@@ -1,0 +1,194 @@
+.card{
+    background-color: var(--dark-blue);
+    width: 87%;
+    max-width: 411px;
+    min-width: 234px;
+    padding: 1.5em;
+    border-radius: 1rem;
+}
+
+.hide{
+    display: none !important;
+}
+
+.card__star{
+    width: 40px;
+    height: 40px;
+    background-color: var(--circle-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card__star img{
+    width: 14px;
+}
+
+.card__title{
+    color: var(--white);
+    margin-top: 1.2rem;
+    margin-bottom: .9rem;
+    font-size: 1.4rem;
+    font-weight: var(--fnt-bold);
+}
+
+.card__copy{
+    color: var(--light-grey);
+    font-size: 0.875rem;
+    font-weight: var(--fnt-regular);
+    line-height: 1.5;
+}
+
+.card__rating{
+    margin-top: 1.7rem;
+}
+
+.card__rating-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card__rating-btn{
+    color: var(--light-grey);
+    font-size: .9375rem;
+    font-weight: 700;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    /* since the button has only 1 line of text i use line height to verticaly center the text to avoid unnecessary markup */
+    line-height: 42px;
+    background-color: var(--circle-color);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.active{
+    background-color: var(--light-grey);
+    color: white;
+}
+
+.card__rating-btn:hover{
+    color: var(--white);
+    background-color: var(--Orange);
+}
+
+.card__button{
+    width: 100%;
+    text-transform: uppercase;
+    color: white;
+    background-color: var(--Orange);
+    border: none;
+    padding: .9379rem 0;
+    border-radius: 50px;
+    margin-top: 1.7rem;
+    margin-bottom: .5rem;
+    font-size: .8em;
+    letter-spacing: 3px;
+    font-weight: 600;
+    cursor:pointer;
+}
+
+.card__button:hover{
+    color: var(--Orange);
+    background-color: white;
+}
+
+.card__thank-you-state{
+    padding: 1em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.state-start__img{
+    width: 140px;
+    height: 96px;
+}
+
+.state-start__title{
+    background-color: var(--circle-color);
+    font-size: .9rem;
+    font-weight: 400;
+    padding: .4rem 1rem;
+    color:var(--Orange);
+    border-radius: 2rem;
+    display: inline-block;
+    margin-top: 1.2rem;
+}
+
+.state-start__subtitle{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.state-start__copy{
+    font-size: .9375rem;
+    color: var(--light-grey);
+    text-align: center;
+}
+
+@media only screen and (min-width: 400px) {
+    .card{
+        padding: 2em;
+        height: 425px;
+    }
+
+    .card__star{
+        width: 50px;
+        height: 50px;
+    }
+
+    .card__star img{
+        width: 18px;
+    }
+
+    .card__title{
+        margin-top: 2rem;
+        margin-bottom: .6rem;
+        font-size: 1.7395rem;
+        font-weight: var(--fnt-bold);
+    }
+
+    .card__copy{
+        color: var(--light-grey);
+        font-size: 0.975rem;
+        font-weight: var(--fnt-regular);
+        line-height: 1.5;
+    }
+
+    .card__rating-btn{
+        font-size: 1rem;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        /* since the button has only 1 line of text i use line height to verticaly center the text to avoid unnecessary markup */
+        line-height: 52px;
+    }
+
+    .card__button{
+        margin-top: 2rem;
+    }
+
+    /* thank you state */
+    .state-start__img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .state-start__title{
+        margin-top: 2rem;
+    }
+
+
+
+    .state-start__subtitle{
+        font-size: 1.695rem;
+        margin-top: 2rem;
+        margin-bottom: 1.5rem;
+    }
+}

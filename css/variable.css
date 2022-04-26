@@ -1,0 +1,18 @@
+:root{
+    /* colors */
+    /* primary */
+    --Orange: hsl(25, 97%, 53%);
+    
+    /* neutral */
+    --white: hsl(0, 0%, 100%);
+    --light-grey: hsl(217, 12%, 63%);
+    --medium-grey: hsl(216, 12%, 54%);
+    /* dont use an element color for variable ex:--circle-color,just name it with asociated color */
+    --circle-color: hsla(216, 12%, 54%, .2);
+    --dark-blue: hsl(213, 19%, 18%);
+    --very-dark-blue: hsl(216, 12%, 8%);
+
+    /* font */
+    --fnt-regular: 400;
+    --fnt-bold: 700;
+}
